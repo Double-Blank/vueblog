@@ -6,7 +6,7 @@ moment.locale("zh-cn") //显示中国的时间格式
 module.exports = {
   title: "DoubleClick",
   description: "相遇或是分别就在一天",
-  // base : './',
+  base : '/vueblog/',
   head: [
     ['meta', { name: "baidu_union_verify", content: "a0036ccf0b657813fb236f80f376c429" }],
     ["link", { rel: "icon", href: "/images/fav.svg" }],
