@@ -1,2 +1,2 @@
 # vueblog
-VuePress 快速搭建个人博客
+VuePress 个人博客
