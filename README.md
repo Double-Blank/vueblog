@@ -9,3 +9,5 @@ npm run serve
 
 # build for production with minification
 npm run build
+
+https://Double-Blank.github.io/vueblog/
