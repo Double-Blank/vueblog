@@ -3,7 +3,7 @@ module.exports = [
     name: "Los Angeles",
     artist: "The Midnight",
     url:
-      "http://ws.stream.qqmusic.qq.com/C400003bf37T44XXgH.m4a?guid=419820764&vkey=D1725A3FF65873DDC0D4631229305307EDB65D4BA121BEB98AA464A870426527E0C30A516F99622E6587DBC8F66B5441CC7ED124ED933B01&uin=&fromtag=66",
+      "http://music.163.com/song/media/outer/url?id=28999945.mp3",
     cover:
       "http://p1.music.126.net/xw-Jg5vjV2bfWYBT-zKbVw==/109951165394997449.jpg?param=130y130",
   },

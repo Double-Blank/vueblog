@@ -1,6 +1,6 @@
 ---
 title: VueRoter
-date: 2020-11-7
+date: 2022-1-7
 sidebar: "auto"
 categories:
   - Vue

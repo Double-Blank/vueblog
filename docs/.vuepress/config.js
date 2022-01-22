@@ -100,17 +100,17 @@ module.exports = {
           
           {
             text: "CSDN",
-            link: "https://blog.csdn.net/weixin_43742708",
+            link: "https://blog.csdn.net/weixin_42815873",
             icon: "reco-csdn",
           },
           {
             text: "GitHub",
-            link: "https://github.com/penggang-home",
+            link: "https://github.com/Double-Blank",
             icon: "reco-github",
           },
           {
             text: "Gitee",
-            link: "https://gitee.com/penggang-home",
+            link: "https://gitee.com/feng-mingzhe",
             icon: "reco-mayun",
           },
         ]

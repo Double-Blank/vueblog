@@ -1,6 +1,6 @@
 ---
 title: Vuex 状态管理系统
-date: 2020-11-10 15:16:00
+date: 2022-1-10 15:16:00
 sidebar: "auto"
 categories:
   - Vue
