@@ -8,6 +8,7 @@ moment.locale("zh-cn") //显示中国的时间格式
 module.exports = {
   title: "DoubleClick",
   description: "相遇然后分别就在一天",
+  base: '/vueblog/',
   theme: "reco",
   themeConfig: {
     // 博客配置
@@ -30,7 +31,7 @@ module.exports = {
     authorAvatar: "/images/profile.jpg",
     mode: "dark", //默认显示模式  modePicker: false 关闭该按钮
     codeTheme: "tomorrow", // default 'tomorrow' okaidia
-    record: "蜀ICP备20019955号",
+    record: "",// 蜀ICP备20019955号
     recordLink: "https://icp.chinaz.com/home/info?host=pengsir.top",
     smooth: "true", //平滑滚动
     // 评论设置 
@@ -41,7 +42,8 @@ module.exports = {
       placeholder: '填写邮箱地址可以及时收到回复噢...',
       visitor: true,
     },
-    lastUpdated: '最后更新于', friendLink: [
+    lastUpdated: '最后更新于',
+    friendLink: [
       {
         title: '午后南杂',
         desc: 'Enjoy when you can, and endure when you must.',
