@@ -1,6 +1,6 @@
 ---
 title: VuePress从入门到放弃
-date: 2020-11-6
+date: 2022-1-6
 sidebar: "auto"
 categories:
   - Vue
