@@ -6,6 +6,9 @@ const moment = require('moment');
 moment.locale("zh-cn") //显示中国的时间格式
 
 module.exports = {
+  head: [
+    ["link", { rel: "icon", href: "/images/fav.svg" }]
+  ],
   title: "DoubleClick",
   description: "相遇然后分别就在一天",
   base: '/vueblog/',
