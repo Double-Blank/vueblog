@@ -9,7 +9,7 @@ module.exports = {
   head: [
     ["link", { rel: "icon", href: "/images/fav.svg" }]
   ],
-  title: "DoubleClick",
+  title: "双击空格",
   description: "相遇然后分别就在一天",
   base: '/vueblog/',
   theme: "reco",
@@ -80,11 +80,10 @@ module.exports = {
         text: "项目",
         icon: 'iconfont icon-tools',
         items: [
-          { text: 'CloudMusic\t|\t米奇妙妙屋', link: 'https://penggang-home.gitee.io/cloud-music/#/discovery', icon: "iconfont icon-wangyiyunyinle" },
-          { text: '电商后台管理系统 V：1.3.0', link: 'http://120.53.120.229:1921/#/login', icon: "iconfont icon-vue" },
-          { text: '电商后台管理系统 V：1.2.0', link: 'http://120.53.120.229:1920/#/login', icon: "iconfont icon-vue" },
-          { text: "电商平台实时监控系统(Echarts)", link: "http://120.53.120.229:9989/#/home", icon: "iconfont icon-vue" },
-          { text: "仿微信聊天", link: "http://120.53.120.229:8100", icon: "reco-wechat" },
+          { text: 'Vue网易云音乐', link: 'http://120.53.120.229:1921/#/login', icon: "iconfont icon-wangyiyunyinle" },
+          { text: 'Vue可编辑大屏系统', link: 'http://120.53.120.229:1921/#/login', icon: "iconfont icon-vue" },
+          { text: '电商后台管理系统', link: "http://120.53.120.229:9989/#/home", icon: "iconfont icon-vue" },
+          { text: "WebSocket微信聊天", link: "http://120.53.120.229:8100", icon: "reco-wechat" },
         ]
       },
       { text: "时间线", link: "/timeline/", icon: "reco-date" },
