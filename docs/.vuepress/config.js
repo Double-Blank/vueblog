@@ -9,7 +9,7 @@ module.exports = {
   head: [
     ["link", { rel: "icon", href: "/images/fav.svg" }]
   ],
-  title: "DoubleClick",
+  title: "双击空格",
   description: "相遇然后分别就在一天",
   base: '/vueblog/',
   theme: "reco",
