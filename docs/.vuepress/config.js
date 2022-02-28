@@ -34,7 +34,7 @@ module.exports = {
     authorAvatar: "/images/profile.jpg",
     mode: "dark", //默认显示模式  modePicker: false 关闭该按钮
     codeTheme: "tomorrow", // default 'tomorrow' okaidia
-    record: "",// 蜀ICP备20019955号
+    record: "京ICP备2022005438号",
     recordLink: "https://icp.chinaz.com/home/info?host=pengsir.top",
     smooth: "true", //平滑滚动
     // 评论设置 
