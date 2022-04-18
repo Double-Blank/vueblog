@@ -11,7 +11,7 @@ module.exports = {
   ],
   title: "双击空格",
   description: "相遇然后分别就在一天",
-  base: '/vueblog/',
+  // base: '/vueblog/',
   theme: "reco",
   themeConfig: {
     // 博客配置
