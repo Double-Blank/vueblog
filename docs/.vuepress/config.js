@@ -42,8 +42,9 @@ module.exports = {
       appId: private.appId,
       appKey: private.appKey,
       recordIP: true,
-      placeholder: "填写邮箱地址可以及时收到回复噢...",
+      placeholder: "留下你想说的话...",
       visitor: true,
+      avatar: 'hide'
     },
     lastUpdated: "最后更新于",
     nav: [
