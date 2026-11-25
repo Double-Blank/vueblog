@@ -606,14 +606,14 @@ service AgentMcpGrpcService {
 ```mermaid
 graph TD
     A[前端请求] --> B[wannarich-admin<br/>AIFlowChatController]
-    B --> C{agent_flow.impl_type?}
+    B --> C{agent_flow.impl_type？}
     
     C -->|origin| D[AgentFlowChatServiceImpl<br/>LangChain4j 原生执行]
     C -->|agentic| E[AgenticServiceImpl<br/>转发到 Python agentic 服务]
     
     D --> D1[FlowTreeParser<br/>解析 Flow 结构]
     D1 --> D2[构建执行树 TreeNode]
-    D2 --> D3{节点类型?}
+    D2 --> D3{节点类型？}
     
     D3 -->|LLM节点| D4[LangChain4j<br/>调用大模型]
     D3 -->|工具节点| D5[JToolProvider<br/>执行工具]
@@ -625,7 +625,7 @@ graph TD
     D6 --> D8
     D7 --> D8
     
-    D8 --> D9{是否有下一节点?}
+    D8 --> D9{是否有下一节点？}
     D9 -->|是| D3
     D9 -->|否| D10[返回最终结果]
     
@@ -633,7 +633,7 @@ graph TD
     E1 --> E2[agentic 服务<br/>FastAPI /chat-agentic]
     E2 --> E3[flow_tree_parser<br/>解析 Flow 结构]
     E3 --> E4[构建 TreeNode<br/>嵌套 Deep Agent]
-    E4 --> E5{节点类型?}
+    E4 --> E5{节点类型？}
     
     E5 -->|LLM节点| E6[LangChain<br/>调用大模型]
     E5 -->|工具节点| E7[MCP / 工具调用]
@@ -645,7 +645,7 @@ graph TD
     E8 --> E10
     E9 --> E10
     
-    E10 --> E11{是否有下一节点?}
+    E10 --> E11{是否有下一节点？}
     E11 -->|是| E5
     E11 -->|否| E12[SSE 流式返回<br/>wannarich-admin → 前端]
 ```

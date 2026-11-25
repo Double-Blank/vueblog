@@ -1,6 +1,14 @@
 const private = require("./private/private")
 const audios = require("./audios")
 
+function hashCode(value) {
+  let hash = 0
+  for (let i = 0; i < value.length; i++) {
+    hash = Math.imul(31, hash) + value.charCodeAt(i) | 0
+  }
+  return (hash >>> 0).toString(36)
+}
+
 // 把最后更改时间更改为 中国地区的样式
 const moment = require("moment");
 moment.locale("zh-cn") //显示中国的时间格式
@@ -110,8 +118,23 @@ module.exports = {
   editLinkText: "在 GitHub 上编辑此页 ！",
   markdown: {
     lineNumbers: true, //代码显示行号
+    extractHeaders: ["h2", "h3"],
+    extendMarkdown(md) {
+      const fence = md.renderer.rules.fence
+      md.renderer.rules.fence = (...args) => {
+        const [tokens, idx] = args
+        const token = tokens[idx]
+        if (token.info.trim() === 'mermaid') {
+          const key = `mermaid_${hashCode(token.content)}`
+          md.$dataBlock[key] = token.content
+          return `<Mermaid id="${key}" :graph="$dataBlock.${key}"></Mermaid>`
+        }
+        return fence(...args)
+      }
+    }
   }, // 搜索设置
   plugins: {
+    "vuepress-plugin-mermaidjs": true,
     //一键复制代码插件: "vuepress-plugin-code-copy": "^1.0.6",
     "vuepress-plugin-code-copy": true,
     // 阅读进度条: "vuepress-plugin-reading-progress": "^1.0.10",
