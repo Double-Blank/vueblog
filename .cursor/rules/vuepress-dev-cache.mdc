@@ -1,0 +1,12 @@
+---
+description: VuePress 1 开发缓存是历史问题，页面没更新时重启 pnpm serve 再打开浏览器，不要改缓存机制
+alwaysApply: true
+---
+
+# VuePress 开发缓存
+
+VuePress 1 会把 markdown 和插件的编译结果放进 cache-loader。改了 `docs/.vuepress/config.js`，或新装了插件（例如 mermaid）之后，浏览器里经常还是旧页面。
+
+这是历史问题。不要去改缓存失效逻辑。
+
+页面和代码对不上时：停掉当前进程，重新执行 `pnpm serve`，再打开浏览器访问对应页面。
