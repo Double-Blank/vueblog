@@ -63,10 +63,10 @@ module.exports = {
         text: "项目",
         icon: "iconfont icon-tools",
         items: [
-          { text: "Vue网易云音乐", link: "https://music.qier222.com/", icon: "iconfont icon-wangyiyunyinle" },
-          { text: "Vue可编辑大屏系统", link: "http://aixshi.top/edit", icon: "iconfont icon-vue" },
+          { text: "WannaRich", link: "https://store.steampowered.com/app/5379100", icon: "iconfont icon-wangyiyunyinle" },
+          { text: "AI 智能体应用平台", link: "http://aixshi.top/ai", icon: "iconfont icon-vue" },
           { text: "电商后台管理系统", link: "https://gitee.com/doubleblank/vue-admin", icon: "iconfont icon-vue" },
-          { text: "WebSocket微信聊天", link: "https://github.com/Double-Blank/vue-we-chat", icon: "reco-wechat" },
+          { text: "WebSocket聊天", link: "https://github.com/Double-Blank/vue-we-chat", icon: "reco-wechat" },
         ]
       },
       { text: "时间线", link: "/timeline/", icon: "reco-date" },

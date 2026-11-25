@@ -7,7 +7,6 @@ categories:
 tags:
  - Vue
  - VuePress
-sticky: 1
 ---
 
 :::tip
