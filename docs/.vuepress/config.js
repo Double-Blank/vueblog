@@ -18,7 +18,7 @@ module.exports = {
     ["link", { rel: "icon", href: "/images/fav.svg" }]
   ],
   title: "双击空格",
-  description: "相遇然后分别就在一天",
+  description: "个人博客",
   // base: "/vueblog/",
   theme: "reco",
   themeConfig: {
@@ -160,10 +160,10 @@ module.exports = {
       width: 150,
       height: 219,
     },
-    // 点击爆炸的彩带效果
+    // 点击爆炸效果。shape 只能是 "star" 或 "circle"，写成数组会在点击时抛错
     "cursor-effects": {
       size: 3,                    // size of the particle, default: 2
-      shape: ["circle"],  // shape of the particle, default: "star"
+      shape: "circle",            // shape of the particle, default: "star"
       zIndex: 999999999           // z-index property of the canvas, default: 999999999
     },
   }

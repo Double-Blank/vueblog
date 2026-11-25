@@ -1,6 +1,6 @@
 ---
 home: true
-tagline: 
+tagline: &nbsp
 heroText: DoubleClick
 bgImageStyle: { height: "100vh" }
 heroTextStyle: {
